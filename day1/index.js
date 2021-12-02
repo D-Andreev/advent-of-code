@@ -1,10 +1,6 @@
-const fs = require('fs');
-const {EOL} = require('os');
+const {readInput} = require('../helpers');
 
-const input = fs.readFileSync('./input.txt')
-  .toString()
-  .split(EOL);
-input.pop();
+const input = readInput('./input.txt');
 
 function partOne() {
   let increasedCount = 0;
@@ -43,4 +39,6 @@ function partTwo() {
   }
   console.log(increasedCount);
 }
+
+partOne();
 partTwo();
