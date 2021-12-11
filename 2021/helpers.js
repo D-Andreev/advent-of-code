@@ -20,5 +20,9 @@ module.exports = {
       str += '\n';
     }
     console.log(str);
+  },
+
+  parseCommaSeparatedNumbers(input) {
+    return input.split(',').map(n => parseInt(n));
   }
 };
