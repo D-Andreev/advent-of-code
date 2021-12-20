@@ -22,6 +22,17 @@ module.exports = {
     console.log(str);
   },
 
+  parseMatrix(lines) {
+    const matrix = new Array(lines.length).fill([]);
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      const chars = line.split('');
+      matrix[i] = chars.map(n => parseInt(n));
+    }
+
+    return matrix;
+  },
+
   parseCommaSeparatedNumbers(input) {
     return input.split(',').map(n => parseInt(n));
   }
