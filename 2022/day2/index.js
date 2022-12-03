@@ -1,6 +1,8 @@
 const {readInput} = require('../../helpers');
+const path = require('path');
 
-const input = readInput('./input.txt');
+console.time("day2");
+const input = readInput(path.join(__dirname, 'input.txt'));
 
 console.log(input)
 
@@ -84,5 +86,5 @@ for (let i = 0; i < input.length; i++) {
 
 console.log('part II', score);
 
-
+console.timeEnd('day2')
 

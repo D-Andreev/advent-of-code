@@ -1,11 +1,10 @@
 const fs = require('fs');
-const {EOL} = require('os');
 
 module.exports = {
   readInput(path) {
     const input = fs.readFileSync(path)
     .toString()
-    .split(EOL);
+    .split(/\r?\n/);
     input.pop();
     return input;
   },
