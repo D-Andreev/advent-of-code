@@ -1,7 +1,7 @@
-const path = require('path');
-const {readInput} = require('../../helpers');
-
 namespace day3 {
+  const {readInput} = require('../../helpers');
+  const path = require('path');
+
   const UPPERCASE_SUBTRACT_COUNT = 38;
   const LOWERCASE_SUBTRACT_COUNT = 96;
   type Compartment = string[];

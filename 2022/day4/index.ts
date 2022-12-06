@@ -1,8 +1,6 @@
-import {readInput} from '../../helpers';
-const path = require('path');
-
 namespace day4 {
   const {readInput} = require('../../helpers');
+  const path = require('path');
 
   const input = readInput(path.join(__dirname, 'input.prod.txt'));
 
